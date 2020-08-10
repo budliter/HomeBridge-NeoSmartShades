@@ -166,6 +166,19 @@ var setupShadeServices = function (that, services)
 
 						break;
 					}
+					
+					case 25: // Move Shade to favorite position!
+					{
+						
+							send(that.config.code + "-gp")
+							setTimeout( function(){
+								targetPosition.updateValue(50);
+								currentPosition.updateValue(50)
+							}, 25000);
+
+						break;
+					}
+						
 					case 100: // Open the shade
 					{
 							send(that.config.code + "-up")
