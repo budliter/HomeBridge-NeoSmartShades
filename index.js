@@ -166,6 +166,18 @@ var setupShadeServices = function (that, services)
 
 						break;
 					}
+					case 5: // Favorite Position
+					{
+							send(that.config.code + "-gp")
+
+							// NEO controller doesn't detect actual position, reset shade after 20 seconds to show the user the shade is at half-position - i.e., neither up or down!
+							setTimeout( function(){
+								targetPosition.updateValue(50);
+								currentPosition.updateValue(50)
+							}, 25000);
+
+						break;
+					}
 					case 100: // Open the shade
 					{
 							send(that.config.code + "-up")
