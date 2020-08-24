@@ -1,7 +1,7 @@
 {
   "name": "homebridge-neosmartshades",
   "version": "1.0.3",
-  "description": "NEO SmartShades Plugin for homebridge: https://github.com/mvpiccarreta/HomeBridge-NeoSmartShades",
+  "description": "NEO SmartShades Plugin for homebridge: https://github.com/budliter/HomeBridge-NeoSmartShades",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin",
@@ -9,10 +9,10 @@
     "homebridge-NEOSmartShades",
     "homebridge- NEO Smart Shades"
   ],
-  "repository": "github:mvpiccarreta/HomeBridge-NeoSmartShades",
+  "repository": "github:budliter/HomeBridge-NeoSmartShades",
   
   "bugs": {
-    "url": "https://github.com/mvpiccarreta/HomeBridge-NeoSmartShades/issues"
+    "url": "https://github.com/budliter/HomeBridge-NeoSmartShades/issues"
   },
   "engines": {
     "node": ">=12.0.0",
