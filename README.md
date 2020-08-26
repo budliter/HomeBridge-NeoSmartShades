@@ -5,6 +5,8 @@ This is a Homebridge plugin for the NEO Smart Shade Controller (See http://neosm
 These instructions are in rough draft form, but should be enough to get you started
 Linux Installation Instructions to be added!
 
+This version is an adaption of prior work of @jvmahon - homebridge-smartshades v0.0.7 (2020-05-19).  This version is nearly identical with one change - this version allows the user to set a "Favorite" position for the blinds by setting the blind to the 25% open position.  When you set to 25% open it will tell the blind to go to the favorite position.
+
 # I. Installing Homebridge on Windows 10
 
 These instructions were originally written or installing HomeBridge on Windows 10, 64  bit. They should also work for earlier versions of Windows. 
@@ -56,6 +58,11 @@ The "code" part of this entry comes from the NEO Smart Blind app. Go to the "Adv
 
 ## F. Operation
 This plugin was designed for use with roller shades that have 1-way communication between the NEO controller and the shade. This means that the controller can instruct the shade to open or close, but it cannot track the position of the shade. That is, even though the shade has been instructed to open, another device (such as a hand-held remote) could change the shade position and the controller can't track this. In order to deal with this issue, I've designed the plugin so it is, effectively, stateless. That is, after a shade has been opened or closed from the iOS Home application, the Home application will show the shade as open or closed for about 20 seconds. After that, the shade is pictured as being at the 50% (half-way) position. I thought leaving the shade at 50% after an open or close operation better indicates that the controller does not really know if the shade is up or down.
+
+Target positions
+1.  Open - will open the shade
+2.  Close - will close the shade
+3.  25% - will set to favorite position
 
 
 
