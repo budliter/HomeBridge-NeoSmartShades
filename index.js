@@ -1,17 +1,10 @@
 'use strict';
 var net = require('net');
 var chalk = require("chalk");
-const pkg = require("./package.json");
-const updateNotifier = require('update-notifier');
 const queue = require("queue");
 
 var sendQueue = queue({autostart:true, concurrency:1})
 
-
-// Checks for available update and returns an instance
-const notifier = updateNotifier({pkg}) // Notify using the built-in convenience method
-notifier.notify();	
-			
 
 var exports = module.exports;
 var globals = [];																																	
